@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "rdr",
+  "version": "1.0",
+  "description": "Stupidly simple fast redirector",
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "rdr"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "applications": {
+    "gecko": {
+      "id": "rdr@example.com"
+    }
+  }
+}
